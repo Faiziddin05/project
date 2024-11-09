@@ -1,0 +1,1154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+.welcome_to_EarlyBrids {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #fff;
+    background-color:black;
+}
+.txt_early_brids {
+    font-family: "Space Mono";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.header__container {
+    height: 100px;
+    border: solid;
+    display: grid;
+    align-items: center;
+}
+
+.early__birds {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.scrollbar {
+    width: 320.91px;
+    height: 99px;
+    padding-top: 35px;
+}
+
+.search {
+    margin-left: 200px;
+    padding-top: 35px;
+    position: relative;
+}
+
+.list_sclollbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: "Space Mono";
+}
+.home {
+    text-decoration: none;
+}
+
+.qodef {
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    width: 50px;
+    height: 6px;
+}
+
+.img__logo {
+    margin-left: 200px;
+    padding-top: 35px;
+}
+
+
+.qodef-opener-icon {
+    width: 77px;
+}
+
+.qodef-opener-icon {
+    padding-left: 285px;
+}
+
+.main__images_header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.coffee-classs {
+    width: 798px;
+    height: 900px;
+}
+
+.enjoy {
+    position: relative;
+}
+
+.enj {
+    width: 737px;
+    height: 900px;
+}
+
+.layer {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    width: 391px;
+    height: 390px;
+} */
+
+
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для блока welcome */
+.welcome_to_EarlyBrids {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #fff;
+    background-color: black;
+}
+
+.txt_early_brids {
+    font-family: "Space Mono";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+/* Стили для контейнера хедера */
+.header__container {
+    height: 100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr; /* Это нужно для адаптивности */
+}
+
+/* Стили для элементов меню */
+.early__birds {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.scrollbar {
+    width: 100%;
+    padding-top: 35px;
+}
+
+.search {
+    margin-left: auto;
+    padding-top: 35px;
+    position: relative;
+}
+
+.list_sclollbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: "Space Mono";
+}
+
+.home {
+    text-decoration: none;
+}
+
+/* Стиль для иконки */
+.qodef {
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    width: 50px;
+    height: 6px;
+}
+
+.img__logo {
+    margin-left: auto;
+    padding-top: 35px;
+}
+
+/* Иконка открытия меню */
+.qodef-opener-icon {
+    width: 77px;
+    padding-left: 10px; /* Уменьшил отступ */
+}
+
+/* Стили для основного изображения */
+.main__images_header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Добавил промежуток между изображениями */
+}
+
+.coffee-classs {
+    width: 100%;
+    height: auto;
+}
+
+.enjoy {
+    position: relative;
+}
+
+.enj {
+    width: 100%;
+    height: auto;
+}
+
+.layer {
+    position: absolute;
+    top: 50%; /* Центрирование слоя */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирует относительно родителя */
+    width: 70%;
+    max-width: 391px;
+    height: auto;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .header__container {
+        grid-template-columns: 1fr; /* Смотрим, чтобы все элементы располагались в 1 колонку */
+    }
+
+    .early__birds {
+        grid-template-columns: 1fr; /* Все элементы в одну колонку */
+        text-align: center;
+    }
+
+    .img__logo {
+        margin: 20px auto;
+    }
+
+    .main__images_header {
+        grid-template-columns: 1fr; /* Все изображения будут в одну колонку */
+    }
+
+    .coffee-classs, .enj {
+        width: 100%;
+        height: auto;
+    }
+
+    .layer {
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+
+
+/* main*/
+.txt__container {
+    border: solid;
+    height: 60px;
+    margin-bottom: 50px;
+    font-family: "Space Mono";
+}
+
+
+.txt {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+
+.our_blends {
+    height: 583.45px;
+    background-color:rgba(253, 241, 217, 1);
+}
+
+.blends {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.our__blends-txt {
+    width: 430px;
+    height: 423.45px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.txt_blends {
+    font-family: "Anton";
+    padding-top: 82px;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 29px;
+}
+
+.blens_vector {
+    width: 163px;
+    height: 58px;
+    position: absolute;
+    top: 205px;
+    left: 210px;
+}
+
+.lorem {
+    font-family: "Space Mono";
+    width: 400px;
+    height: 49.98px;
+    margin-bottom: 100px;
+}
+
+.view_container{
+    display: flex;
+}
+
+.frame {
+    margin-left: 15px;
+}
+
+.kind__of-coffee {
+    display: flex;
+    width: 700px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.arabika_container {
+    height: 590px;
+    border: 1px solid;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+.arabika_container .arabika_img{
+    transition: transform 0.5s;
+}
+.arabika_container:hover .arabika_img{
+    transform: scale(1.1);
+}
+
+.arabika_img {
+    height: 400px;
+}
+
+.rubusru_santa {
+    width: 380px;
+    height: 590px;
+    border: 1px solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.rubusru_santa .arabika_img{
+    transition: transform 0.5s;
+
+}
+.rubusru_santa:hover .arabika_img{
+    transform:scale(1.1);
+}
+
+.name__of-coffee {
+    margin-left: 50px;
+    font-family: "Anton";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.price {
+    font-family: "Space Mono";
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.just_a_coffee {
+    width: 100%;
+}
+.img_just_a-coffee {
+    max-width: 1536px;
+    margin-bottom: 0px;
+}
+
+.quality__of-coffee {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.quality {
+    width: 670px;
+    height: 366px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.star_container {
+    margin-left: 250px;
+}
+
+.txt_quality {
+    font-family: "Anton";
+    font-size: 35px;
+    margin-bottom: 60px;
+    margin-top: 15px;
+}
+
+.henry {
+    font-family: "Space Mono";
+    margin-bottom: 50px;
+    margin-left: 250px;
+}
+
+.points {
+    margin-left: 250px;
+}
+
+.points__img {
+    margin-left: 15px;
+}
+
+.cup__coffee {
+    width: 767.5px;
+    margin-top: 0px;
+}
+
+.deferent_coffee {
+    display: flex;
+}
+
+.first_kind-of-coffee {
+    width: 120px;
+    height: 800px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation:sideways;
+    font-size: 50px;
+    font-family: "Anton";
+    line-height: 60px;
+    padding: 20px;
+    border: 1px solid rgb(158, 158, 158);
+}
+
+.kind-of-coffee-img {
+    border: 2px solid rgb(158, 158, 158);
+}
+
+.kind_coffee {
+    width: 900px;
+    height: 750px;
+    padding-top: 90px;
+}
+
+.kind-of-coffee-img {
+    display: flex;
+}
+
+.pice {
+    height: 700px;
+    padding-top: 90px;
+    margin-left: 50px;
+}
+
+.amsterdam {
+    font-family: "Anton";
+    margin-bottom: 20px;
+}
+
+.about_price {
+    font-family: "Space Mono";
+    margin-bottom: 40px;
+}
+
+.contact_us {
+    background-color: black;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.coffee_for_you {
+    height: 100px;
+    border-bottom: 2px solid rgb(180, 180, 180)
+}
+
+.head_coffee_f_y {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 100px;
+    font-family: "Anton";
+    font-size: 50px;
+}
+
+
+
+.different_types {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: auto;
+}
+
+.french_roast {
+    height: 502px;
+    border: 1px solid rgb(170, 170, 170);
+    position: relative;
+}
+
+.coffees_type {
+    width: 394.75px;
+    height: 409.55px;
+}
+.french_roast .coffees_type{
+    transition: transform 0.5s;
+}
+.french_roast:hover .coffees_type{
+    transform: scale(1.1);
+}
+
+.new_bg {
+    width: 67px;
+    height: 34px;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    border-radius: 5px;
+    background: rgba(251, 237, 129, 1);
+}
+.new {
+    font-family: "Anton";
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+.sold_bg {
+    width: 67px;
+    height: 34px;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    border-radius: 5px;
+    background: rgb(3, 3, 3);
+}
+
+.sold {
+    font-family: "Anton";
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 18px;
+    margin-top: 5px;
+    color: #ffff;
+}
+
+.name_of-coffee {
+    font-family: "Anton";
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 42px;
+}
+
+.price_of-cofee {
+    font-family: "Space Mono";
+    margin-left: 42px;
+    margin-top: 5px;
+}
+
+.swing_by_our-place {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 710px;
+    background: rgba(253, 241, 217, 1);
+}
+
+.our_menu {
+    width: 796px;
+    height: 700px;
+    position: relative
+}
+
+.our_place {
+    width: 618px;
+    height: 160px;
+    font-family: "Anton";
+    font-size: 70px;
+    line-height: 80px;
+    padding-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 233.69px;
+}
+.vector {
+    width: 300px;
+    position: absolute;
+    top: 124px;
+    left: 150px;
+}
+.menu_food {
+    width: 315px;
+    height: 237px;
+    margin-left: 40px;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 177px;
+    border:1px solid;
+    padding-left: 58px;
+}
+
+.cont_1 {
+    width: 360px;
+    height: 98px;
+}
+
+
+
+.delivery__ {
+    font-size: 35px;
+    font-family: "Anton";
+    line-height: 45px;
+}
+
+.p__delivery {
+    font-size: 18px;
+    font-family: "Space Mono";
+    line-height: 24px;
+    margin-top: 5.98px;
+}
+
+.img_cont_1 {
+    display: flex;
+}
+.view {
+    font-family: "Anton";
+}
+
+.reseerve_table_container {
+    border: 1px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.book_table{
+    position: relative;
+}
+
+.background__ {
+    max-width: 1535px;
+    min-width: 1535px;
+}
+.header_reserve {
+    width: 700px;
+    font-family: "Anton";
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    position: absolute;
+    top: 144px;
+    left: 600px;
+}
+
+.book_a_table {
+    font-size: 15px;
+    font-family: "Anton";
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.drop_down {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+}
+
+.person {
+    width: 345.58px;
+    height: 41px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.date_of_reserve {
+    width: 345.58px;
+    height: 41px;
+    border-top: none;
+    border-right: none;
+    border-left:none;
+}
+.hour_of_reserve {
+    width: 345.58px;
+    height: 41px;
+    border-top: none;
+    border-right: none;
+    border-left:none;
+}
+
+.team {
+    font-family: "Anton";
+    font-size: 70px;
+    margin-left: 50px;
+}
+
+
+.teams_img {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    overflow: auto;
+}
+
+.first_image {
+    width: 320px;
+    height: 420px;
+    border: 1px solid;
+    border-left: none;
+}
+.first_image .uma_clark{
+    transition: transform 0.5s;
+}
+.first_image:hover .uma_clark{
+    transform: scale(1.1);
+}
+
+
+.uma_clark {
+    width: 245px;
+    height: 304px;
+    padding-top: 28px;
+    margin-right: 27px;
+    margin-left: 27px;
+    margin-bottom: 10px;
+}
+.name_of_employee {
+    margin-left: 27px;
+    font-family: "Anton";
+    font-weight: 600;
+}
+.status {
+    margin-left: 27px;
+    font-family: "Space Mono";
+}
+
+
+.recent_posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 2335px;
+}
+
+.recent_blog_posts {
+    position: relative;
+    border: 1px solid;
+    border-right: none;
+    border-left: none;
+
+}
+
+.blog_posts {
+    width: 484px;
+    height: 185px;
+    font-family: "Anton";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 80px;
+    margin-left: 60px;
+    margin-top: 52px;
+}
+
+.vector2 {
+    position: absolute;
+    top: 130px;
+    left: 270px;
+}
+
+.vector_button-recent {
+    position: absolute;
+    top: 860px;
+    left: 70px;
+}
+
+.read_all_news{
+    font-family: "Anton";
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 632px;
+    margin-left: 60px;
+    padding: 20px 40px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.about_recent_posts {
+    border: 1px solid;
+    border-top: none;
+}
+
+.first_post { 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 1041px;
+    height: 389px;
+    border: 1px solid;
+}
+
+.img_post {
+    display: flex;
+    margin-top: 48px;
+    margin-left: 58px;
+}
+
+.img_post .post1{
+    transition: transform 0.5s;
+}
+.img_post:hover .post1{
+    transform: scale(1.1);
+}
+
+.post_txt {
+    width: 290px;
+    height: 300px;
+    margin-left: 44px;
+}
+
+.date_post {
+    font-size: 18px;
+    font-family: "Space Mono";
+    line-height: 24px;
+    margin-bottom: 9.98;
+}
+
+.about_post {
+    font-family: "Anton";
+    font-size: 35px;
+    line-height: 45px;
+
+}
+
+.post1 {
+    width: 440px;
+    height: 295px;
+    border-radius: 5px;
+}
+
+/* Barista school*/
+.barista_school {
+    height: 925px;
+    background: rgba(197, 214, 209, 1);
+    border: 1px solid;
+
+}
+
+.school_careers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.school_barista-img {
+    margin-top: 200px;
+    margin-left: 100px;
+    overflow: hidden;
+}
+.school_img {
+    width: 800px;
+    height: 500px;
+}
+.school_barista-img .school_img{
+    transition: transform 0.5s;
+}
+.school_barista-img:hover .school_img{
+    transform: scale(1.1);
+}
+
+.barista_school-txt {
+    width: 450px;
+    height: 620px;
+    margin-top: 300px;
+    margin-left: 54px;
+    position: relative;
+}
+
+.barista {
+    width: 391px;
+    height: 53px;
+    font-size: 35px;
+    font-family: "Anton";
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 11px;
+}
+
+.about_school {
+   width: 407px;
+   height: 121px; 
+   font-family: "Space Mono";
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+   margin-bottom: 57px;
+}
+
+.view_more {
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Anton";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.vector_button {
+    width: 120px;
+    position: absolute;
+    left: 6px;
+}
+
+
+
+.trusted_supplies-head {
+    width: 761px;
+    height: 105px;
+    font-family: "Anton";
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.supplies {
+    display: flex;
+}
+
+.good_coffee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 300px;
+    border: 1px solid;
+    border-left: none;
+}
+.good_coffee-first {
+    width: 105px;
+    height: 82px;
+}
+
+/* Our coffee & Coffee prices*/
+.coffee_prices {
+    display: flex;
+    height: 606px;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+}
+
+.caffee_late_container{
+    margin-top: 155px;
+    margin-left: 90px;
+}
+
+.caffe_late {
+    display: flex;
+    justify-content: space-between;
+    width: 614px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.caffe_late-price {
+    width: 98px;
+    height: 31px;
+    font-size: 20px;
+    font-family: "Anton";
+}
+
+.price_of_caffe-late {
+   width: 58px;
+   height: 26px; 
+   font-size: 18px;
+   font-family: "Space Mono";
+}
+.about_caffe_late {
+    font-family: "Space Mono";
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25.98px;
+}
+
+.our__coffee_img{
+    width: 760px;
+    height: 606px;
+    margin-left: 73px;
+}
+.our_coffee {
+    width: 760px;
+    height: 606px;
+}
+
+
+.follow_us_header {
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    font-family: "Anton";
+    font-weight: 400;
+    line-height: 80px;
+    height: 171px;
+    padding-left: 50px;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+
+.our_more_images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+.follow_us-img {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    /* overflow: hidden; */
+}
+.follow_us-img .more1 {
+    transition: transform 0.5s;
+}
+.follow_us-img:hover .more1{
+    transform: scale(1.1);
+}
+
+
+
+.more1 {
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+} 
+
+
+
+
+
+/* FOOTER */
+.footer {
+    height: 220px;
+    border: 1px solid;
+}
+
+.footer_container {
+    display: flex;
+}
+
+.icon__ {
+    margin-top: 68px;
+    margin-left: 70px;
+    margin-right: 36px;
+}
+
+.contact_us_footer {
+    display: flex;
+    margin-top: 70px;
+}
+
+
+.header_footer {
+    font-family: "Anton";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38.57px;
+    margin-bottom: 7.56px;
+}
+.address {
+    font-family: "Space Mono";
+    margin-bottom: 2px;
+} 
+
+.tel_url {
+    display: flex;
+    text-decoration: none;
+}
+
+.telegramm {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.tel {
+    align-items: center;
+}
+
+.my_account {
+    font-family: "Space Mono";
+    margin-left: 250px;
+}
+
+.social_media {
+    margin-left: 250px;
+    font-family: "Space Mono";
+}
+
+.facebook {
+    display: flex;
+    margin-bottom: 10px;
+}
+.facebook__ {
+    margin-left: 10px;
+}
+
+.facebook_icon {
+    width: 25px;
+    height: 25px;
+}
+
+.instagram_icon {
+    width: 25px;
+    height: 25px;
+}
+.twitter {
+    width: 25px;
+    height: 25px;
+}
+
+.facebook_name {
+    text-decoration: none;
+}
